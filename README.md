@@ -65,7 +65,7 @@
 
 ## 3. 手机APP(Appium)
 
-请基于 [Appium](http://appium.io/)  完成任意一款APP的自动化测试，请附带可下载的测试APP样例链接。或者直接基于本模板项目给定样例APP [src/test/resources/apk/app-debug-1.0.0.apk](https://github.com/atquiz/automation_test_quiz/tree/main/src/test/resources/apk/app-debug-1.0.0.apk) 完成测试。
+请基于 [Appium](http://appium.io/)  完成任意一款APP的自动化测试，请附带可下载的测试APP样例链接。或者直接基于本模板项目给定样例APP [app-debug-1.0.0.apk](https://github.com/atquiz/auto_test_quiz/app-debug-1.0.0.apk) 完成测试。
 测试内容需包括以下操作
 
 * 点击按钮
