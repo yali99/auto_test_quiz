@@ -3,7 +3,7 @@
 
 ## 0. 任务要求
 
-> **特别注意**：请于完成后，将项目源码更新至候选者您本人的Github，在您项目的**Settings**页面，例如本项目为此[链接](https://github.com/atquiz/automation_test_quiz) ，将您的项目设置为**Private Repository**以免借阅, 并于**Manage access**邀请**nnnlyy**作为协作者(collaborator)后，在**nnnlyy**的Repo发起[issue](https://github.com/atquiz/automation_test_quiz/issues)声明您的项目链接，并最终反馈给HR/Vendor/猎头等渠道
+> **特别注意**：请于完成后，将项目源码更新至候选者您本人的Github，在您项目的**Settings**页面，例如本项目为此[链接](https://github.com/atquiz/auto_test_quiz) ，将您的项目设置为**Private Repository**以免借阅, 并于**Manage access**邀请**nnnlyy**作为协作者(collaborator)后，在**nnnlyy**的Repo发起[issue](https://github.com/atquiz/auto_test_quiz/issues)声明您的项目链接，并最终反馈给HR/Vendor/猎头等渠道
 
 ### 基本要求
 
@@ -19,7 +19,7 @@
 
 希望，我们可以遇到这样的您
 
-* 认真理解题目的要求，若有不明确的地方，可以直接给**nnnlyy**提[issue](https://github.com/atquiz/automation_test_quiz/issues)沟通 或 通过HR/Vendor/猎头等反馈
+* 认真理解题目的要求，若有不明确的地方，可以直接给**nnnlyy**提[issue](https://github.com/atquiz/auto_test_quiz/issues)沟通 或 通过HR/Vendor/猎头等反馈
 * 思路清晰，代码规范，尽量完成了更多的任务，针对**项目结构**和**代码质量**进行了完善
 * 尽量提交可以直接运行的项目，至少也应该是可以通过**Maven**构建的
 * 提交一个规范的Java项目，符合标准的项目结构，根据需求引入必要的依赖并解决冲突，创建必要的文件和配置
