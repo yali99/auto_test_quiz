@@ -53,7 +53,9 @@
    **Create Claim Request**：
    
    Employee Name：Amelia  Brown
+
    Event：Travel allowances
+
    Currency：Euro
    截图
 3. 点击**Create**后验证成功提示信息, 截图
