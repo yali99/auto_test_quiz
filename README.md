@@ -51,15 +51,16 @@
 
 1. 点击**Employee Claims**, 添加一条**Assign Claims**记录：
    **Create Claim Request**：
+   
    Employee Name：Amelia  Brown
    Event：Travel allowances
    Currency：Euro
    截图
-2. 点击**Create**后验证成功提示信息, 截图
-3. 跳转至**Assign Claim**详情页，验证与前一步数据一致，截图
-4. 添加**Expenses**，选择**Expense Type**和**Date**，填写**amount**，点击**Submit**，验证成功提示信息，截图
-5. 检查数据与填写数据一致，点击**Back**返回，截图
-6. 验证Record中存在刚才的提交记录，截图
+3. 点击**Create**后验证成功提示信息, 截图
+4. 跳转至**Assign Claim**详情页，验证与前一步数据一致，截图
+5. 添加**Expenses**，选择**Expense Type**和**Date**，填写**amount**，点击**Submit**，验证成功提示信息，截图
+6. 检查数据与填写数据一致，点击**Back**返回，截图
+7. 验证Record中存在刚才的提交记录，截图
 
 测试完成后，应生成相应的[HTML]测试报告，报告包括截图，操作步骤，状态等，如果case失败，附有失败截图和失败日志
 
