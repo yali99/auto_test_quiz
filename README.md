@@ -52,7 +52,7 @@
 1. 点击**Employee Claims**, 添加一条**Assign Claims**记录：
    **Create Claim Request**：
    
-   Employee Name：Amelia  Brown
+   Employee Name：Amelia  Brown(如果搜索不到，可以自己找一条有效数据)
 
    Event：Travel allowances
 
