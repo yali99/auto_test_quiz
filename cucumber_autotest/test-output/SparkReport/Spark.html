@@ -35,174 +35,33 @@
 <a href="#"><span class="badge badge-primary"></span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">10月 23, 2025 03:37:49 下午</span></a>
+<a href="#"><span class="badge badge-primary">10月 23, 2025 04:55:57 下午</span></a>
 </li>
 </ul>
 </div>
 </div><div class="side-nav">
 <div class="side-nav-inner">
 <ul class="side-nav-menu">
-<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
-<a id="nav-dashboard" class="dropdown-toggle" href="#">
-<span class="ico"><i class="fa fa-bar-chart"></i></span>
-</a>
-</li>
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
 </a>
 </li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
         <div class="main-content">
-<div class="container-fluid p-4 view dashboard-view">
-<div class="row">
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0">Started</p>
-<h3>10月 23, 2025 03:37:49 下午</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0">Ended</p>
-<h3>10月 23, 2025 03:39:08 下午</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0 text-pass">Features Passed</p>
-<h3>1</h3>
-</div></div>
-</div>
-<div class="col-md-3">
-<div class="card"><div class="card-body">
-<p class="m-b-0 text-fail">Features Failed</p>
-<h3>0</h3>
-</div></div>
-</div>
-</div>
-<div class="row">
-<div class="col-md-4">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Features</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='parent-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> features passed
-</small>
-</div>
-<div>
-<small data-tooltip='0%'><b>0</b> features failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Scenarios</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='child-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'><b>1</b> scenarios passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> scenarios failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card">
-<div class="card-header">
-<h6 class="card-title">Steps</h6>
-</div>
-<div class="card-body">
-<div class="">
-<canvas id='grandchild-analysis' width='115' height='90'></canvas>
-</div>
-</div>
-<div class="card-footer">
-<div><small data-tooltip='100%'><b>26</b> steps passed</small></div>
-<div>
-<small data-tooltip='0%'><b>0</b> steps failed,
-<b>0</b> skipped, <b data-tooltip='%'>0</b> others
-</small>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row"><div class="col-md-12">
-<div class="card"><div class="card-header"><p>Timeline</p></div>
-<div class="card-body pt-0"><div>
-<canvas id="timeline" height="120"></canvas>
-</div></div>
-</div>
-</div></div>
-<script>
-var timeline = {
-"Employee Claims Management":78.372
-};
-</script>
-<div class="row">
-<div class="col-lg-6 col-md-12 sysenv-container">
-<div class="card">
-<div class="card-header"><p>System/Environment</p></div>
-<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
-<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
-<tbody>
-<tr>
-<td>version</td>
-<td>1.0.0</td>
-</tr>
-<tr>
-<td>os</td>
-<td>Windows 10</td>
-</tr>
-</tbody>
-</table></div>
-</div>
-</div>
-</div>
-</div>
-<script>
-var statusGroup = {
-parentCount: 5,
-passParent: 1,
-failParent: 0,
-warningParent: 0,
-skipParent: 0,
-childCount: 5,
-passChild: 1,
-failChild: 0,
-warningChild: 0,
-skipChild: 0,
-infoChild: 0,
-grandChildCount: 5,
-passGrandChild: 26,
-failGrandChild: 0,
-warningGrandChild: 0,
-skipGrandChild: 0,
-infoGrandChild: 0,
-eventsCount: 5,
-};
-</script><div class="test-wrapper row view test-view">
+<div class="test-wrapper row view test-view">
   <div class="test-list">
     <div class="test-list-tools">
 <ul class="tools pull-left">
@@ -212,7 +71,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -220,25 +79,25 @@ eventsCount: 5,
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">Employee Claims Management</p>
             <p class="text-sm">
-              <span>下午3:37:49</span> / <span>00:01:18:372</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>下午4:55:57</span> / <span>00:00:44:288</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Employee Claims Management</h5>
-<span class='badge badge-success'>10.23.2025 下午3:37:49</span>
-<span class='badge badge-danger'>10.23.2025 下午3:39:08</span>
-<span class='badge badge-default'>00:01:18:372</span>
+<h5 class="test-status text-fail">Employee Claims Management</h5>
+<span class='badge badge-success'>10.23.2025 下午4:55:57</span>
+<span class='badge badge-danger'>10.23.2025 下午4:56:41</span>
+<span class='badge badge-default'>00:00:44:288</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -252,13 +111,13 @@ So that I can process travel allowances efficiently</div>
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Create and verify employee travel claim</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Create and verify employee travel claim</div>
           <div class="status-avatar float-right mr-4">
             <i class="fa fa-paperclip"></i>
           </div>
       </div>
     </div>
-        <div class="collapse">
+        <div class="">
           <div class="card-body">
               <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_am_logged_into_the_claims_management_system()">
                 <span>Given I am logged into the claims management system</span>
@@ -267,9 +126,9 @@ So that I can process travel allowances efficiently</div>
               </div>
               <div class="step pass-bg" title="AFTER_STEP">
                 <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153801_153
+      <div>Step_20251023_165613_118
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded1.png' src="../Screenshots/embedded1.png">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
     
     </div></div>
 </div>
@@ -283,9 +142,9 @@ So that I can process travel allowances efficiently</div>
               </div>
               <div class="step pass-bg" title="AFTER_STEP">
                 <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153803_773
+      <div>Step_20251023_165615_821
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded2.png' src="../Screenshots/embedded2.png">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
     
     </div></div>
 </div>
@@ -299,173 +158,116 @@ So that I can process travel allowances efficiently</div>
               </div>
               <div class="step pass-bg" title="AFTER_STEP">
                 <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153805_965
+      <div>Step_20251023_165618_095
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded3.png' src="../Screenshots/embedded3.png">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
     
     </div></div>
 </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_create_a_new_assign_claim_with_the_following_details(io.cucumber.datatable.DataTable)">
+              <div class="step fail-bg" title="com.claims.steps.EmployeeClaimsSteps.i_create_a_new_assign_claim_with_the_following_details(io.cucumber.datatable.DataTable)">
                 <span>And I create a new Assign Claim with the following details:</span>
       <div><table class='markup-table table '><tr><td>Employee Name</td><td>yytest wang</td></tr><tr><td>Event</td><td>Travel Allowance</td></tr><tr><td>Currency</td><td>Euro</td></tr></table>
       </div>
       <div>
+        <textarea disabled class="code-block">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@role='option' and @class='oxd-autocomplete-option' and .//span[text()='yytest  wang']]"}
+  (Session info: chrome=141.0.7390.123)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '13.2.1', java.version: '17.0.8'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [855daec7f8c8ee01d722312e4e3a7f66, findElement {using=xpath, value=//div[@role='option' and @class='oxd-autocomplete-option' and .//span[text()='yytest  wang']]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.123, chrome: {chromedriverVersion: 141.0.7390.122 (b477534e7e1..., userDataDir: /var/folders/6t/n1ygd74x2hz...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56007}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:56007/devtoo..., se:cdpVersion: 141.0.7390.123, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 855daec7f8c8ee01d722312e4e3a7f66
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at com.claims.pages.BasePage.waitForElementToBeVisible(BasePage.java:41)
+	at com.claims.pages.AssignClaimPage.createClaim(AssignClaimPage.java:22)
+	at com.claims.steps.EmployeeClaimsSteps.i_create_a_new_assign_claim_with_the_following_details(EmployeeClaimsSteps.java:110)
+	at ✽.I create a new Assign Claim with the following details:(file:///Users/wyl/workspace/auto_test_quiz/cucumber_autotest/src/test/resources/features/employee_claims.feature:12)
+</textarea>
+      
       </div>
               </div>
               <div class="step pass-bg" title="AFTER_STEP">
                 <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153809_902
+      <div>Step_20251023_165639_987
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded4.png' src="../Screenshots/embedded4.png">
+<img data-featherlight='../embedded4.png' src="../embedded4.png">
     
     </div></div>
 </div>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_see_a_success_message_for_claim_creation()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_see_a_success_message_for_claim_creation()">
                 <span>Then I should see a success message for claim creation</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153831_681
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded5.png' src="../Screenshots/embedded5.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_be_redirected_to_the_assign_claim_details_page()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_be_redirected_to_the_assign_claim_details_page()">
                 <span>And I should be redirected to the Assign Claim details page</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153833_421
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded6.png' src="../Screenshots/embedded6.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.the_claim_details_should_match_the_entered_information()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.the_claim_details_should_match_the_entered_information()">
                 <span>And the claim details should match the entered information</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153835_193
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded7.png' src="../Screenshots/embedded7.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_click_the_add_expense_button()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_click_the_add_expense_button()">
                 <span>When I click the Add Expense button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153836_943
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded8.png' src="../Screenshots/embedded8.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_add_an_expense_with_the_following_details(io.cucumber.datatable.DataTable)">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_add_an_expense_with_the_following_details(io.cucumber.datatable.DataTable)">
                 <span>And I add an expense with the following details:</span>
       <div><table class='markup-table table '><tr><td>Expense Type</td><td>Accommodation</td></tr><tr><td>Date</td><td>2025-01-01</td></tr><tr><td>Amount</td><td>150.00</td></tr></table>
       </div>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153838_943
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded9.png' src="../Screenshots/embedded9.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_see_a_success_message_for_expense_submission()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_see_a_success_message_for_expense_submission()">
                 <span>Then I should see a success message for expense submission</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153900_678
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded10.png' src="../Screenshots/embedded10.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.the_expense_details_should_match_the_entered_information()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.the_expense_details_should_match_the_entered_information()">
                 <span>And the expense details should match the entered information</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153902_441
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded11.png' src="../Screenshots/embedded11.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_click_the_back_button()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_click_the_back_button()">
                 <span>When I click the Back button</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153904_572
-          <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded12.png' src="../Screenshots/embedded12.png">
-    
-    </div></div>
-</div>
-      <div>
-      </div>
-              </div>
-              <div class="step pass-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_see_the_expense_record_in_the_claims_list()">
+              <div class="step skip-bg" title="com.claims.steps.EmployeeClaimsSteps.i_should_see_the_expense_record_in_the_claims_list()">
                 <span>Then I should see the expense record in the claims list</span>
-      <div>
+      <div>Step skipped
       </div>
               </div>
-              <div class="step pass-bg" title="AFTER_STEP">
-                <span>com.claims.steps.Hooks.afterStep(io.cucumber.java.Scenario)</span>
-      <div>Step_20251023_153906_412
+              <div class="step pass-bg" title="AFTER">
+                <span>com.claims.steps.Hooks.tearDown(io.cucumber.java.Scenario)</span>
+      <div>FAILED_Create and verify employee travel claim_20251023_165641_695
           <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='../Screenshots/embedded13.png' src="../Screenshots/embedded13.png">
+<img data-featherlight='../embedded5.png' src="../embedded5.png">
     
     </div></div>
 </div>
@@ -487,7 +289,213 @@ So that I can process travel allowances efficiently</div>
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-        </div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.openqa.selenium.NoSuchElementException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.openqa.selenium.NoSuchElementException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>16:56:18 下午</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>And I create a new Assign Claim with the following details:</a>
+<div class="">
+<span class="badge badge-default">Employee Claims Management.Create and verify employee travel claim.And I create a new Assign Claim with the following details:</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>10月 23, 2025 04:55:57 下午</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>10月 23, 2025 04:56:44 下午</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>1</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='44%'><b>8</b> steps passed</small></div>
+<div>
+<small data-tooltip='5%'><b>1</b> steps failed,
+<b>9</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Employee Claims Management":44.288
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>browser</td>
+<td>Chrome</td>
+</tr>
+<tr>
+<td>project</td>
+<td>Employee Claims Automation</td>
+</tr>
+<tr>
+<td>env</td>
+<td>QA</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Mac OS X</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 1,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 8,
+failGrandChild: 1,
+warningGrandChild: 0,
+skipGrandChild: 9,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
       </div>
     </div>
   </div>
