@@ -74,3 +74,16 @@
 * 点击按钮
 * 提取资源文本
 * 断言不同页面的资源
+
+## <span style="color: #ff6666;">任务完成简介</span>
+* 任务1:基础验证，
+  * 模块名：selenium_autest
+  * 测试报告查看位置：selenium_autest/target/allure-reports/index.html
+  * 测试报告截图查看位置：selenium_autest/report_screenshots
+  * 运行介绍：请查看selenium_autest/README.md
+* 任务2:表单验证，
+  * 模块名：cucumber_autotest
+  * 测试报告查看位置：test-output/SpartReport/Spark.html
+  * 测试报告截图查看位置：report_screenshots
+  * 运行介绍：请查看selenium_autest/README.md
+
