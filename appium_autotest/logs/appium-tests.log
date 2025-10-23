@@ -1,0 +1,109 @@
+2025-10-23 14:49:54.146 [main] INFO  com.example.appium.base.BaseTest - === Starting test: 从第一页导航到第二页并返回 ===
+2025-10-23 14:50:00.479 [main] INFO  com.example.appium.utils.ReportManager - Extent Report initialized at: /Users/wyl/workspace/auto_test_quiz/appium_autotest/test-output/TestReport_20251023_145000.html
+2025-10-23 14:50:00.482 [main] INFO  com.example.appium.utils.ReportManager - Started test: 从第一页导航到第二页并返回
+2025-10-23 14:50:00.483 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试开始 - 初始化第一页
+2025-10-23 14:50:01.434 [main] INFO  com.example.appium.utils.ReportManager - 检查 NEXT 按钮显示状态: true
+2025-10-23 14:50:01.892 [main] INFO  com.example.appium.utils.ReportManager - Step: 检查 NEXT 按钮显示状态: true
+2025-10-23 14:50:01.894 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 检查 NEXT 按钮显示状态: true
+2025-10-23 14:50:02.063 [main] INFO  com.example.appium.utils.ReportManager - 获取 NEXT 按钮文本: NEXT
+2025-10-23 14:50:02.489 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取 NEXT 按钮文本: NEXT
+2025-10-23 14:50:02.490 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 获取 NEXT 按钮文本: NEXT
+2025-10-23 14:50:04.689 [main] INFO  com.example.appium.utils.ReportManager - 获取第一页标题: First Page
+2025-10-23 14:50:05.108 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取第一页标题: First Page
+2025-10-23 14:50:05.109 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 获取第一页标题: First Page
+2025-10-23 14:50:05.293 [main] INFO  com.example.appium.utils.ReportManager - 获取第一页内容: Hello Ian
+2025-10-23 14:50:05.727 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取第一页内容: Hello Ian
+2025-10-23 14:50:05.727 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 获取第一页内容: Hello Ian
+2025-10-23 14:50:05.729 [main] INFO  com.example.appium.utils.PageUtils - === First Page 内容 ===
+标题: First Page
+内容: Hello Ian
+======================
+2025-10-23 14:50:05.730 [main] INFO  com.example.appium.utils.ReportManager - === First Page 内容 ===
+标题: First Page
+内容: Hello Ian
+======================
+2025-10-23 14:50:05.730 [main] INFO  com.example.appium.utils.ReportManager - 点击 NEXT 按钮前
+2025-10-23 14:50:06.092 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击 NEXT 按钮前
+2025-10-23 14:50:06.093 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 点击 NEXT 按钮前
+2025-10-23 14:50:06.467 [main] INFO  com.example.appium.utils.ReportManager - 点击 NEXT 按钮后，跳转到第二页
+2025-10-23 14:50:06.777 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击 NEXT 按钮后，跳转到第二页
+2025-10-23 14:50:06.778 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 点击 NEXT 按钮后，跳转到第二页
+2025-10-23 14:50:07.345 [main] INFO  com.example.appium.utils.ReportManager - 检查 PREVIOUS 按钮显示状态: true
+2025-10-23 14:50:07.706 [main] INFO  com.example.appium.utils.ReportManager - Step: 检查 PREVIOUS 按钮显示状态: true
+2025-10-23 14:50:07.707 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 检查 PREVIOUS 按钮显示状态: true
+2025-10-23 14:50:07.907 [main] INFO  com.example.appium.utils.ReportManager - 获取 PREVIOUS 按钮文本: PREVIOUS
+2025-10-23 14:50:08.264 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取 PREVIOUS 按钮文本: PREVIOUS
+2025-10-23 14:50:08.264 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 获取 PREVIOUS 按钮文本: PREVIOUS
+2025-10-23 14:50:09.043 [main] INFO  com.example.appium.utils.ReportManager - 获取第二页标题: Second Page
+2025-10-23 14:50:09.409 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取第二页标题: Second Page
+2025-10-23 14:50:09.410 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 获取第二页标题: Second Page
+2025-10-23 14:50:09.410 [main] INFO  com.example.appium.utils.PageUtils - === Second Page 内容 ===
+标题: Second Page
+内容: 
+======================
+2025-10-23 14:50:09.410 [main] INFO  com.example.appium.utils.ReportManager - === Second Page 内容 ===
+标题: Second Page
+内容: 
+======================
+2025-10-23 14:50:09.412 [main] INFO  com.example.appium.utils.ReportManager - 点击 Email 图片按钮前
+2025-10-23 14:50:09.760 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击 Email 图片按钮前
+2025-10-23 14:50:09.761 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 点击 Email 图片按钮前
+2025-10-23 14:50:10.110 [main] INFO  com.example.appium.utils.ReportManager - 点击 Email 图片按钮后，显示 Toast
+2025-10-23 14:50:10.465 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击 Email 图片按钮后，显示 Toast
+2025-10-23 14:50:10.466 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 点击 Email 图片按钮后，显示 Toast
+2025-10-23 14:50:11.005 [main] INFO  com.example.appium.utils.ReportManager - 检查 Toast 显示状态: true
+2025-10-23 14:50:11.333 [main] INFO  com.example.appium.utils.ReportManager - Step: 检查 Toast 显示状态: true
+2025-10-23 14:50:11.334 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 检查 Toast 显示状态: true
+2025-10-23 14:50:12.192 [main] INFO  com.example.appium.utils.ReportManager - 获取 Toast 文本: This is a demo for Appium Inspector
+2025-10-23 14:50:12.568 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取 Toast 文本: This is a demo for Appium Inspector
+2025-10-23 14:50:12.569 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 获取 Toast 文本: This is a demo for Appium Inspector
+2025-10-23 14:50:12.570 [main] INFO  com.example.appium.utils.ReportManager - 点击 PREVIOUS 按钮前
+2025-10-23 14:50:12.937 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击 PREVIOUS 按钮前
+2025-10-23 14:50:12.937 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 点击 PREVIOUS 按钮前
+2025-10-23 14:50:14.080 [main] INFO  com.example.appium.utils.ReportManager - 点击 PREVIOUS 按钮后，返回第一页
+2025-10-23 14:50:14.395 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击 PREVIOUS 按钮后，返回第一页
+2025-10-23 14:50:14.395 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 点击 PREVIOUS 按钮后，返回第一页
+2025-10-23 14:50:15.411 [main] INFO  com.example.appium.utils.ReportManager - 检查 NEXT 按钮显示状态: true
+2025-10-23 14:50:15.778 [main] INFO  com.example.appium.utils.ReportManager - Step: 检查 NEXT 按钮显示状态: true
+2025-10-23 14:50:15.779 [main] INFO  com.example.appium.utils.ScreenshotUtils - Screenshot taken for step: 检查 NEXT 按钮显示状态: true
+2025-10-23 14:50:15.783 [main] INFO  com.example.appium.base.BaseTest - === Finished test: 从第一页导航到第二页并返回 ===
+2025-10-23 14:50:16.303 [main] INFO  com.example.appium.utils.ReportManager - PASS: Test passed: 从第一页导航到第二页并返回
+2025-10-23 15:09:09.040 [main] INFO  com.example.appium.base.BaseTest - === Starting test: 从第一页导航到第二页并返回 ===
+2025-10-23 15:09:14.931 [main] INFO  com.example.appium.utils.ReportManager - Extent Report initialized at: /Users/wyl/workspace/auto_test_quiz/appium_autotest/test-output/TestReport_20251023_150914.html
+2025-10-23 15:09:14.934 [main] INFO  com.example.appium.utils.ReportManager - Started test: 从第一页导航到第二页并返回
+2025-10-23 15:09:14.934 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试开始 - 第一页初始状态
+2025-10-23 15:09:18.723 [main] INFO  com.example.appium.utils.ReportManager - Step: 准备点击 NEXT 按钮
+2025-10-23 15:09:21.015 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取第二页标题: Second Page
+2025-10-23 15:09:21.016 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击第二页的邮件图标
+2025-10-23 15:09:21.898 [main] INFO  com.example.appium.utils.ReportManager - Step: 验证Toast显示
+2025-10-23 15:09:22.859 [main] INFO  com.example.appium.utils.ReportManager - Step: 准备点击 PREVIOUS 按钮
+2025-10-23 15:09:23.219 [main] INFO  com.example.appium.utils.ReportManager - Step: 验证成功返回第一页
+2025-10-23 15:09:24.198 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试完成
+2025-10-23 15:09:24.204 [main] INFO  com.example.appium.base.BaseTest - === Finished test: 从第一页导航到第二页并返回 ===
+2025-10-23 15:09:24.700 [main] INFO  com.example.appium.utils.ReportManager - PASS: Test passed: 从第一页导航到第二页并返回
+2025-10-23 15:12:25.621 [main] INFO  com.example.appium.base.BaseTest - === Starting test: 从第一页导航到第二页并返回 ===
+2025-10-23 15:12:31.939 [main] INFO  com.example.appium.utils.ReportManager - Extent Report initialized at: /Users/wyl/workspace/auto_test_quiz/appium_autotest/test-output/TestReport_20251023_151231.html
+2025-10-23 15:12:31.942 [main] INFO  com.example.appium.utils.ReportManager - Started test: 从第一页导航到第二页并返回
+2025-10-23 15:12:31.943 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试开始 - 第一页初始状态
+2025-10-23 15:12:34.652 [main] INFO  com.example.appium.utils.ReportManager - Step: 准备点击 NEXT 按钮
+2025-10-23 15:12:36.866 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取第二页标题: Second Page
+2025-10-23 15:12:37.298 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击第二页的邮件图标
+2025-10-23 15:12:38.046 [main] INFO  com.example.appium.utils.ReportManager - Step: 验证Toast显示
+2025-10-23 15:12:39.000 [main] INFO  com.example.appium.utils.ReportManager - Step: 准备点击 PREVIOUS 按钮
+2025-10-23 15:12:39.733 [main] INFO  com.example.appium.utils.ReportManager - Step: 验证成功返回第一页
+2025-10-23 15:12:41.036 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试完成
+2025-10-23 15:12:41.426 [main] INFO  com.example.appium.base.BaseTest - === Finished test: 从第一页导航到第二页并返回 ===
+2025-10-23 15:12:41.968 [main] INFO  com.example.appium.utils.ReportManager - PASS: Test passed: 从第一页导航到第二页并返回
+2025-10-23 15:13:22.864 [main] INFO  com.example.appium.base.BaseTest - === Starting test: 从第一页导航到第二页并返回 ===
+2025-10-23 15:13:29.092 [main] INFO  com.example.appium.utils.ReportManager - Extent Report initialized at: /Users/wyl/workspace/auto_test_quiz/appium_autotest/test-output/TestReport_20251023_151329.html
+2025-10-23 15:13:29.095 [main] INFO  com.example.appium.utils.ReportManager - Started test: 从第一页导航到第二页并返回
+2025-10-23 15:13:29.095 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试开始 - 第一页初始状态
+2025-10-23 15:13:32.066 [main] INFO  com.example.appium.utils.ReportManager - Step: 准备点击 NEXT 按钮
+2025-10-23 15:13:34.237 [main] INFO  com.example.appium.utils.ReportManager - Step: 获取第二页标题: Second Page
+2025-10-23 15:13:34.682 [main] INFO  com.example.appium.utils.ReportManager - Step: 点击第二页的邮件图标
+2025-10-23 15:13:35.431 [main] INFO  com.example.appium.utils.ReportManager - Step: 验证Toast显示
+2025-10-23 15:13:36.370 [main] INFO  com.example.appium.utils.ReportManager - Step: 准备点击 PREVIOUS 按钮
+2025-10-23 15:13:37.058 [main] INFO  com.example.appium.utils.ReportManager - Step: 验证成功返回第一页
+2025-10-23 15:13:37.947 [main] INFO  com.example.appium.utils.ReportManager - Step: 测试完成
+2025-10-23 15:13:38.307 [main] INFO  com.example.appium.base.BaseTest - === Finished test: 从第一页导航到第二页并返回 ===
+2025-10-23 15:13:38.754 [main] INFO  com.example.appium.utils.ReportManager - PASS: Test passed: 从第一页导航到第二页并返回

@@ -11,6 +11,7 @@
     <modules>
         <module>selenium_autotest</module>
         <module>cucumber_autotest</module>
+        <module>appium_autotest</module>
     </modules>
 
     <properties>
