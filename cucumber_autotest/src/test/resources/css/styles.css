@@ -1,0 +1,8 @@
+/* 自定义报告样式 */
+.spark-report .dashboard {
+    background-color: #f8f9fa;
+}
+.test-content .test-name {
+    font-weight: bold;
+    color: #2c3e50;
+}

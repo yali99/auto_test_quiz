@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.test</groupId>
+    <artifactId>selenium_autotest</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+
+    <properties>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
+        <selenium.version>4.15.0</selenium.version>
+        <webdrivermanager.version>5.6.4</webdrivermanager.version>
+        <junit.version>5.10.2</junit.version>
+        <allure.version>2.24.0</allure.version>
+    </properties>
+
+    <dependencies>
+        <!-- Selenium 核心 -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>${selenium.version}</version>
+        </dependency>
+
+        <!-- 驱动管理 -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>${webdrivermanager.version}</version>
+        </dependency>
+
+        <!-- JUnit 5 测试框架 -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.junit.vintage</groupId>-->
+<!--            <artifactId>junit-vintage-engine</artifactId>-->
+<!--            <version>${junit.version}</version> &lt;!&ndash; 可根据实际情况选择合适的版本 &ndash;&gt;-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
+
+        <!-- 套件支持（必须添加，否则 @Suite 注解无效） -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-api</artifactId>
+            <version>1.9.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-suite-engine</artifactId>
+            <version>1.9.3</version>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- Allure 报告 -->
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-junit5</artifactId>
+            <version>${allure.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-java-commons</artifactId>
+            <version>${allure.version}</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <!-- 执行测试并生成 Allure 报告数据 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <!-- 配置 Allure 监听器，收集测试结果 -->
+                    <argLine>
+                        -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/1.9.20.1/aspectjweaver-1.9.20.1.jar"
+                    </argLine>
+                    <systemProperties>
+                        <!-- 指定 Allure 结果目录（需与报告插件配置一致） -->
+                        <property>
+                            <name>allure.results.directory</name>
+                            <value>${project.build.directory}/allure-results</value>
+                        </property>
+                    </systemProperties>
+<!--                    <systemProperties>-->
+<!--                        &lt;!&ndash; 指定 Allure 结果目录（需与报告插件配置一致） &ndash;&gt;-->
+<!--                        <property>-->
+<!--                                <name>allure.results.directory</name>-->
+<!--                                <value>${project.build.directory}/allure-results</value>-->
+<!--                        </property>-->
+<!--                    </systemProperties>-->
+
+                    <!-- 删掉这部分 TestNG 相关配置 -->
+
+<!--                    <suiteXmlFiles>-->
+<!--                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>-->
+<!--                    </suiteXmlFiles>-->
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.aspectj</groupId>
+                        <artifactId>aspectjweaver</artifactId>
+                        <version>1.9.20.1</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+
+            <!-- 添加 Allure 报告插件 -->
+            <plugin>
+                <groupId>io.qameta.allure</groupId>
+                <artifactId>allure-maven</artifactId>
+                <version>2.12.0</version> <!-- 推荐使用较新的稳定版本 -->
+                <configuration>
+                    <!-- 配置 Allure 结果目录（需与测试时生成的结果目录一致） -->
+<!--                    <resultsDirectory>${project.basedir}/allure-results</resultsDirectory>-->
+                    <resultsDirectory>${project.build.directory}/allure-results</resultsDirectory>
+                    <!-- 配置报告输出目录 -->
+                    <reportDirectory>${project.build.directory}/allure-report</reportDirectory>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

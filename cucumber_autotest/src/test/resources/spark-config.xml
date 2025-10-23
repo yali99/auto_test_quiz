@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extent>
+    <spark>
+
+        <!-- 报告主题: dark (默认), light -->
+        <theme>dark</theme>
+
+        <!-- 启用时间线: true, false -->
+        <enableTimeline>true</enableTimeline>
+
+        <!-- 文档标题 -->
+        <documentTitle>Cucumber Test Report</documentTitle>
+
+        <!-- 报告名称 -->
+        <reportName>Automation Test Report</reportName>
+
+        <!-- 时间戳格式 -->
+        <timestampFormat>MMM dd, yyyy HH:mm:ss</timestampFormat>
+
+        <!-- 自定义CSS -->
+        <css>src/test/resources/css/styles.css</css>
+
+        <!-- 自定义JS -->
+        <js>src/test/resources/js/scripts.js</js>
+
+    </spark>
+</extent>
