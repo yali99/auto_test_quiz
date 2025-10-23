@@ -95,11 +95,8 @@ public class EmployeeClaimsSteps {
             Map<String, String> claimData = dataTable.asMap(String.class, String.class);
 
             employeeName = claimData.get("Employee Name");
-            System.out.println("保存的员工名称：" + employeeName);
             event = claimData.get("Event");
-            System.out.println("保存的事件：" + event);
             currency = claimData.get("Currency");
-            System.out.println("保存的货币：" + currency);
 
             // 验证必要字段
             if (!claimData.containsKey("Employee Name")) {
@@ -125,9 +122,6 @@ public class EmployeeClaimsSteps {
     @Then("the claim details should match the entered information")
     public void the_claim_details_should_match_the_entered_information() {
         claimDetailPage = new ClaimDetailPage(driver);
-        System.out.println("之前保存的员工名称：" + employeeName);
-        System.out.println("之前保存的事件：" + event);
-        System.out.println("之前保存的货币：" + currency);
 
         Assert.assertEquals(employeeName, claimDetailPage.getEmployeeName());
         Assert.assertEquals(event,claimDetailPage.getEvent());
@@ -166,9 +160,6 @@ public class EmployeeClaimsSteps {
 
     @Then("the expense details should match the entered information")
     public void the_expense_details_should_match_the_entered_information() {
-        System.out.println("之前保存的报销类型：" + expenseType);
-        System.out.println("之前保存的报销时间：" + date);
-        System.out.println("之前保存的报销金额：" + amount);
 
         List<String> expenseDetails = expensePage.getExpenseDetails(expenseType, date, amount);
 

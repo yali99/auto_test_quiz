@@ -58,13 +58,13 @@ public class ExpensePage extends BasePage{
 //        WebElement parentDiv = divs.get(divs.size()-1);
 //        WebElement expenseTypeElement = parentDiv.findElement(By.xpath("//div[contains(text(),'"+expenseTypeText+"')]"));
         WebElement rowElement = waitForElementToBeVisible(By.xpath("//div[@class='oxd-table-body' and @role='rowgroup']//div[@role='row' and contains(@class, 'oxd-table-row') and .//div[@role='cell'][2]//div[text()='Accommodation'] and .//div[@role='cell'][3]//div[text()='2025-01-01'] and .//div[@role='cell'][5]//div[text()='150.00']]"));
-        System.out.println("rowElement: " + rowElement.getText());
+//        System.out.println("rowElement: " + rowElement.getText());
         WebElement expenseTypeElement = rowElement.findElement(By.xpath("//div[@role='cell'][2]//div[text()='"+expenseTypeText+"']"));
-        System.out.println("expenseTypeElement: " + expenseTypeElement.getText());
+//        System.out.println("expenseTypeElement: " + expenseTypeElement.getText());
         WebElement dateElement = rowElement.findElement(By.xpath("//div[@role='cell'][3]//div[text()='"+dateText+"']"));
-        System.out.println("dateElement: " + dateElement.getText());
+//        System.out.println("dateElement: " + dateElement.getText());
         WebElement amountElement = rowElement.findElement(By.xpath("//div[@role='cell'][5]//div[text()='"+amountText+"']"));
-        System.out.println("amountElement: " + amountElement.getText());
+//        System.out.println("amountElement: " + amountElement.getText());
         return Arrays.asList(expenseTypeElement.getText(), dateElement.getText(), amountElement.getText());
 
     }

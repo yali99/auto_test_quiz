@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <extent>
     <spark>
+        <!-- 保持您现有的配置不变 -->
+        <reportName>自动化测试报告</reportName>
+        <documentTitle>员工报销测试报告</documentTitle>
+        <encoding>UTF-8</encoding>
+        <timeStampFormat>yyyy-MM-dd HH:mm:ss</timeStampFormat>
+        <theme>STANDARD</theme>
 
-        <!-- 报告主题: dark (默认), light -->
-        <theme>dark</theme>
+        <!-- 新增：失败处理配置 -->
+        <enableOfflineMode>true</enableOfflineMode>
+        <timelineEnabled>true</timelineEnabled>
+        <viewOrder>BARS, TEST, EXCEPTION, AUTHOR, DEVICE, LOG</viewOrder>
 
-        <!-- 启用时间线: true, false -->
-        <enableTimeline>true</enableTimeline>
-
-        <!-- 文档标题 -->
-        <documentTitle>Cucumber Test Report</documentTitle>
-
-        <!-- 报告名称 -->
-        <reportName>Automation Test Report</reportName>
-
-        <!-- 时间戳格式 -->
-        <timestampFormat>MMM dd, yyyy HH:mm:ss</timestampFormat>
-
-        <!-- 自定义CSS -->
-        <css>src/test/resources/css/styles.css</css>
-
-        <!-- 自定义JS -->
-        <js>src/test/resources/js/scripts.js</js>
-
+        <!-- 确保失败场景也显示 -->
+        <showTestRunnerLogs>true</showTestRunnerLogs>
+        <enableExceptionView>true</enableExceptionView>
     </spark>
 </extent>
