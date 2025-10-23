@@ -86,10 +86,11 @@
   * 测试报告查看位置：test-output/SpartReport/Spark.html
   * 测试报告截图查看位置：report_screenshots
   * 运行介绍：请查看selenium_autest/README.md
+  * 备注：需先添加yytest wang 用户，才能成功运行用例
 * 任务3:手机APP(Appium)
   * 模块名：appium_autotest
   * 测试报告查看位置：test-output/TestReport_yyyyMMdd_HHmmss.html
   * 测试报告截图查看位置：report_screenshots
-  * 运行介绍：请查看appium_autest/README.md（注：需先添加yytest wang 用户，才能成功运行用例）
-  * 备注：使用Android设备调试
+  * 运行介绍：请查看appium_autest/README.md
+  * 备注：仅支持Android 设备
 
